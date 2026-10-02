@@ -1,0 +1,16 @@
+Delete these OLD files from your project (they are replaced by the new layered code):
+  src/main/java/com/manish/retailinventory/Employee.java
+  src/main/java/com/manish/retailinventory/Employeecontroller.java
+  src/main/java/com/manish/retailinventory/Person.java
+  src/main/java/com/manish/retailinventory/PersonService.java
+  src/main/java/com/manish/retailinventory/PersonController.java
+  src/main/java/com/manish/retailinventory/PersonRepository.java
+  src/test/java/com/manish/retailinventory/RetailInventoryApplicationTests.java  (needs a live DB)
+Keep: RetailInventoryApplication.java (provided again, identical), mvnw, .mvn, .gitignore (append ".env").
+
+NEW IN THIS DELIVERY (backend): Sarthi + dashboard extensions. Files changed/added:
+  pom.xml (gson), application.properties (groq.*), .env.example (GROQ_API_KEY)
+  dto/DashboardSummary, dto/SarthiDtos, service/DashboardService, service/SarthiService, service/SarthiToolService,
+  service/SalesOrderService (getByNumber), controller/SarthiController, exception/ServiceUnavailableException,
+  exception/GlobalExceptionHandler, repository/InventoryRepository, repository/SalesOrderRepository
+Simply copy the whole retail-inventory folder over your project again.
